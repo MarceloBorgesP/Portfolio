@@ -36,7 +36,7 @@ var resize = function () {
          $('#menu').css( "display" , "none" );
          $('header').css( "height" , "0" );
 
-        $( 'button' ).click(function(){
+        $( '#hamburger-menu button' ).click(function(){
           if(header == false) {
             $('#menu').css( "display" , "inherit" );
             $('.li-header').css( "display" , "inherit" );

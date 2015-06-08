@@ -5,12 +5,58 @@
 	padding: 30px 5% 10px 5%;
 }
 
-.div-content * {
-	font-weight: bold;
+/*.div-content>ul {
+	text-align: center;
+}*/
+
+.agencia {
+	min-height: 100%;
+	text-align: center;
+	max-width: 800px;
+	margin: 25px auto 25px auto;
+	padding: 10px 2% 10px 2%;
+	background-color: rgba(151,153,156,0.2);
+	color: #ffffff;
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;
+	line-height: 30px;
+	letter-spacing: 1px;
 }
 
-.div-content>ul {
-	text-align: center;
+.agencia>div {
+	padding: 25px 0;
+}
+
+.agencia>div:hover {
+	background-color: rgba(242,0,255,0.4);
+}
+
+.agencia p {
+	font-size: 1.3em;
+}
+
+@keyframes rotater {
+0% { transform:rotate(0) scale(1) }
+50% { transform:rotate(360deg) scale(2) }
+100% { transform:rotate(720deg) scale(1) }
+}
+
+.agencia>div:hover > span { 
+	/* safari / chrome / mozilla */
+	animation-name:rotater; 
+	animation-duration:500ms; 
+	animation-iteration-count:1; 
+	animation-timing-function: ease-out;
+
+	/* opera */
+	-o-transform:rotate(360deg) scale(2);
+	-o-transition-duration:500ms;
+	-o-transition-timing-function: ease-out;
+
+	/* ie */
+	-ms-transform:rotate(360deg) scale(2);
+	-ms-transform-duration:500ms;
+	-ms-transform-timing-function: ease-out;
 }
 
 #content-index {
@@ -19,30 +65,32 @@
 
 
 #office {
-	background-image: url("images/office.jpg");
+	background-color: #111111;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	line-height: 30px;
-	color: #FFFFFF;
+	
 }
 
 #coffee {
-	background-image: url("images/coffee.jpg");
+	background-color: #111111;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	color: #FFFFFF;
-	text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.56);
+	
 }
 
-#coffee > *, #office > * {
-	font-size: 1.5em;
-	font-weight: 900;
+.div-content > p {
+	font-size: 1.3em;
+	color: #FFFFFF;
+	max-width: 900px;
+	margin: 0 auto;
+	letter-spacing: 1px;
 	text-align: center;
 }
 
-#coffee > h2, #office > h2 {
+/*#coffee > h2, #office > h2 {
 	font-size: 3em;
-}
+}*/
 
 div>span {
 	color: yellow;
@@ -55,4 +103,6 @@ div>span {
     border: 0;
     left: 0;
     background: #fff;
+    max-width: 900px;
+    margin: 0 auto;
 }

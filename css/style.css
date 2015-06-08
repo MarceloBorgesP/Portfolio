@@ -1,4 +1,4 @@
-/* VERTIVAL HEADER */
+/* VERTICAL HEADER */
 
 @media all and (min-width: 601px) {
     body, html, .container {
@@ -24,7 +24,7 @@
 		padding-right: 32px;
 		padding-left: 32px;
 		padding-top: 40px;
-		background-color: #28ABE3;
+		background-color: #39b1c6;
 		float: left;
 		box-shadow: 10px 10px 5px #888888; 
 	}
@@ -35,7 +35,8 @@
 	}
 
 	.me {
-		margin-left: 20px;
+		max-width: 200px;
+		margin: 0 auto;
 	}
 
 
@@ -74,11 +75,19 @@
 	}
 
 	.social-media-icons {
-		margin-left: 56px;
+		/*margin-left: 56px;*/
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	.social-media-icons>ul {
+		margin: 0 auto;
+		/*display: inline-block;	*/
 	}
 
 	.social-media-list {
-		float: left;
+		display: inline-block;
+		/*float: left;*/
 		width: 30px;
 		height: 30px;
 		margin: 5px;
@@ -88,7 +97,7 @@
 	}
 
 	.social-media-list:hover {
-		transform: rotateZ(20deg);
+		transform: rotateZ(40deg);
 	}
 
 	a:hover {

@@ -1,14 +1,17 @@
 
 body, html, .wrapper, footer {
-    	min-height: 100%;
     	width: 100%;
 		margin: 0px;
 		padding: 0px;
 }
 
 body {
-	/*background-image: url("images/yellow.gif");*/
-	background-color: #1C1C1C;
+	/*background-image: url("images/black.jpg");*/
+	background-color: #111111;
+
+
+
+
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -32,8 +35,8 @@ hr {
 }
 
 .content {
-	min-height: 100%;
 	margin: 0 auto;
+	min-height: 100%;
 }
 
 li {
@@ -219,18 +222,18 @@ footer .row {
 h2 {
 	text-align: center;
 	font-size: 3.5em;
-	margin-bottom: 30px;
-	padding-bottom: 30px;
 	padding-right: 10px;
 	padding-left: 10px;
+	color: #ffffff;
 }
 
 footer h2 {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
 	border-bottom-color: #ffffff;
 	font-weight: bold;
-	color: #ffffff;
 }
 
 footer h3 {

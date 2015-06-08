@@ -7,6 +7,7 @@ var resize = function () {
         header_top = true;
 
         $('.menu-hamburger').css( "display" , "inherit" );
+        $('footer').css('display', 'none');
         $('.ul-nav').appendTo('.responsive-menu');
 
         $( '.menu-hamburger' ).click(function(){
@@ -19,6 +20,7 @@ var resize = function () {
           $('#header_top').remove();
           header_top = false;
 
+          $('footer').css('display', 'inherit');
           $('.menu-hamburger').css( "display" , "none" );
           $('.bubble').toggleClass();
           $('.expand').toggleClass();
